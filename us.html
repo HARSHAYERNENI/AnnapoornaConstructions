@@ -1,0 +1,114 @@
+<!DOCTYPE>
+<html>
+
+     <head>
+          <title>About us</title>
+           <link rel="stylesheet" type ="text/css" href="us.css">
+             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     </head>
+          <body>
+            <!--top navigation bar starts-->
+                <nav class="nav nav_top">
+                   <div class="logo">
+                       <a href="index.html" ><img alt="logo"src="logo.jpg"></a>
+                   </div>
+                   <div class="nav_side">
+                      <a href="index.html">Home</a>
+                      <a href="us.html">About Us</a>
+                      <a href="#">blog</a>
+                      <a href="contact.html">Contact US</a>
+                      <a href="#">Login/Register</a>
+                   </div>
+                </nav>
+                <!--top navigation bar Ends-->
+                <!--about us starts-->
+                <div class="about_us">
+                  <h2>About Us</h2>
+                  <div class="about_content">
+                    <p>
+                      1stop is a strong platform with immense potential for students from anywhere and anytime to access cutting-edge Mentorship and Certification Program widespread with a larger number of domains and niches to explore learning. E-learning has been the fastest growing way for an aspirant to start their journey into pursuing their Dream Career.
+                    <br>
+                      Our Vision lies to bring in a technology-oriented career-driven Industrial Experience into the aspirant’s career with Great Value.
+                    <br>
+                      “Learn, Grow, Prosper”
+                    </p>
+                  </div>
+                  <h2>Our Mission</h2>
+                  <p>
+                    1stop is a strong platform with immense potential for students from anywhere and anytime to access cutting-edge Mentorship and Certification Program widespread with a larger number of domains and niches to explore learning. E-learning has been the fastest growing way for an aspirant to start their journey into pursuing their Dream Career.
+                  </p>
+                  <p>
+                    Our Vision lies to bring in a technology-oriented career-driven Industrial Experience into the aspirant’s career with Great Value.
+                  </p>
+                  <p>
+                    “Learn, Grow, Prosper”
+                  </p>
+                </div>
+                <!--about us Ends-->
+                <!--feed starts-->
+                <hr>
+                <div class = feed>
+                  <h2>Write a review</h2>
+                  <div class="feed_form" method="post">
+                    <form name="submit-googlesheet">
+                      <input type="text" name="Name" placeholder="Name"><br>
+                      <input type="email" name="Email" placeholder="Email"><br>
+                      <input type="number" name="Number" placeholder="Contact Number"><br>
+                      <textarea rows="5" cols="7" name="Review"  placeholder="Write Your Review"></textarea><br>
+                      <button type="submit">Submit</button>
+                    </form>
+                  </div>
+                </div>
+                <hr>
+                <!--feed ends-->
+                <!--footer starts-->
+            <footer>
+              <div class="footer_logo">
+                  <a href="index.html" ><img src="logo.jpg" width="150"></a>
+              </div>
+              <div class="pages">
+                <h3>Pages</h3>
+                <a href="us.html">About Us</a>|
+                <a href="#">Services</a>|
+                <a href="#">Blog</a>|
+                <a href="#">Login</a>|
+                <a href="#">Sign Up</a>
+              </div>
+              <div class="doc">
+                <h3>Documents</h3>|
+                <a href="#">Privacy Policy</a>|
+                <a href="#">Terms of Use</a>|
+                <a href="#">Refund Policy</a>
+              </div>
+              <div class="social">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/profile.php?id=100050378594917" target="_blank"><i class="fa fa-facebook-f"></i></a>|
+                <a href="https://in.linkedin.com" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>|
+                <a href="https://www.instagram.com/yernenivardhan/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>|
+                <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              </div>
+              <div class="contacts">
+                <h3>Contact US</h3>
+                <a href="tel: +919390728621" target="_blank"><i class="fa fa-phone" aria-hidden="true"></i></a>|
+                <a href="https://api.whatsApp.com/send/phone:+919390728621" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>|
+                <a href="mailto:harsha.education1179@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+              </div>
+              <hr>
+              <p>
+                Copyrigths &copy; 2021 ANNAPOORNA CONSTRUCTIONS. All rigth reserved
+              </p>
+            </footer>
+              <!--footer Ends-->
+              <script type="text/javascript">
+                const scriptURL = 'https://script.google.com/macros/s/AKfycby83SQ60buwzB-yizFIDrx1bYFZ0QqAMvH3q1haVH9tqsv0fPuUyvAw-KYjbDeHoWc24A/exec'
+                 const form = document.forms['submit-googlesheet']
+                 form.addEventListener('submit', e => {
+                   e.preventDefault()
+                   fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                   .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                   .catch(error => console.error('Error!', error.message))
+              })
+              </script>
+          </body>
+
+</html>
